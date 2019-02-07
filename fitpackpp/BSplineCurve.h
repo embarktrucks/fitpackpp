@@ -23,6 +23,10 @@
 #ifndef BSPLINE_CURVE_H
 #define BSPLINE_CURVE_H
 
+#ifndef alloca
+#define alloca __builtin_alloca
+#endif
+
 #include <vector>
 #include <string>
 

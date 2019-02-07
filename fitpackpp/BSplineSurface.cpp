@@ -172,7 +172,7 @@ BSplineSurface::BSplineSurface(std::vector<double> &knotX, std::vector<double> &
 BSplineSurface::BSplineSurface(const std::string &filename)
 {
 	std::ifstream f;
-	f.open(filename, std::ios::binary);
+	f.open(filename.c_str(), std::ios::binary);
 	if (!f.good()) {
 		std::stringstream s;
 		s << "Failed to open B-Spline surface cache file: " << filename;
@@ -266,7 +266,7 @@ int BSplineSurface::degree()
 void BSplineSurface::serialize(const std::string &filename)
 {
 	std::ofstream f;
-	f.open(filename, std::ios::binary);
+	f.open(filename.c_str(), std::ios::binary);
 
 	f.write((char*) &nx, sizeof(int));
 	for (int i = 0; i < nx; i++) {

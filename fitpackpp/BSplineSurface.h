@@ -22,6 +22,9 @@
 
 #ifndef BSPLINE_SURFACE_H
 #define BSPLINE_SURFACE_H
+#ifndef alloca
+#define alloca __builtin_alloca
+#endif
 
 #include <vector>
 #include <string>
