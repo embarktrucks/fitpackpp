@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 # add modules
 #list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/Modules")
 
-find_package(Eigen3 3.2 REQUIRED)
+find_package(Eigen3 REQUIRED)
 #find_package(GTest GTEST_LIBRARY REQUIRED)
 #find_package( Threads REQUIRED )
 
